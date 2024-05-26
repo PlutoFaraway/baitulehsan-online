@@ -116,9 +116,9 @@ html {
 
 .big-heading {
     font-size: 2rem;
-    color: #151414;
+    color: #fff;
     line-height: 1.5;
-    text-shadow: 2px whitesmoke;
+    text-shadow: 2px whitesmoke;
 }
 
 .title-image {
@@ -1251,3 +1251,29 @@ p {
     }
 
 }
+
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }
+  
+  @keyframes slide {
+    from { transform: translateX(0%); }
+    to { transform: translateX(-100%); }
+  }
+  
+  .moving-text {
+    white-space: nowrap; /* Prevent text from wrapping */
+    animation: slide 30s linear infinite; /* Adjust timing and animation type as needed */
+    color: black;
+    font-size: 20px;
+    display: inline-block;
+  }
+  
+  .moving-text-container {
+    width: 100%; /* Adjust width as needed */
+    overflow: hidden; /* Hide overflow */
+    border: 1px solid grey;
+    position: absolute;
+  }
